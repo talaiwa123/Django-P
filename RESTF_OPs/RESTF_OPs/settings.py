@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'RA_OPs',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +79,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'RA_OPs',
+        'USER': 'root',
+        'PASSWORD': 'Mysql1997@#',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
